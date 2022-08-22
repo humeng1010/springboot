@@ -4,11 +4,12 @@ server:
 #    context-path: /api
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///spring_db
-    username: root
-    password: 12345678
+    druid:
+#    type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///spring_db
+      username: root
+      password: 12345678
 
 mybatis-plus:
   configuration:
